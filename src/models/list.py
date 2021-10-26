@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from time import sleep
 from pymongo import MongoClient
 
-client = MongoClient('localhost', 27017)
+client = MongoClient()
 db = client.dbsparta
 
 
