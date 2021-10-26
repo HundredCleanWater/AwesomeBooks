@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	color:#000;
 }
 ol, ul {
 	list-style: none;
@@ -47,21 +48,10 @@ table {
 	border-spacing: 0;
 }
 
-a:link {
-	color: white;
-	text-decoration: none;
+a, a:active, a:hover, a:visited, a:link {
+	color:#000;
+	text-decoration:none;
 }
-
-a:visited {
-	color: white;
-	text-decoration: none;
-}
-
-a:hover {
-	color: white;
-	text-decoration: none;
-}
-
 
 button:focus{
     border: none;

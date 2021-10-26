@@ -1,4 +1,18 @@
 {% extends "layout.html"  %}
 {% block content %}
-<h1>Index Page</h1>
+<div id="wrap">
+    <section class="sct1">
+        <div class="bnr">
+
+            <form action="http://192.168.0.14:5000/" method="post" class="zxc">
+                <input type="text" id="qwe">
+                <button>
+                    <span class="a11y">검색하기</span>
+                    <span class="fas fa-search"></span>
+                </button>
+            </form>
+            <h1>{{ data }} 여기</h1>
+        </div>
+    </section>
+</div><!--wrap-->
 {% endblock %}
