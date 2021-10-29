@@ -32,41 +32,6 @@
     <!-- 자바스크립트 -->
     <script defer src="{{ url_for('static', filename='js/index.js') }}"></script>
 
-    <script>
-        {#$.ajax({#}
-        {#    method: "GET",#}
-        {#    url: "https://openapi.naver.com/v1/search/book.json",#}
-        {#    headers: {#}
-                {#"Content-Type": "application/json",#}
-        {#        'X-Naver-Client-Id': 'FX0D1x996cJpBNHf5huf',#}
-        {#        'X-Naver-Client-Secret': 'ZFgUa_ti5y',#}
-        {#    },#}
-        {#    data: {query: '파이썬'},#}
-            {#success: function (response) {#}
-            {#    console.log(response['d_title'])#}
-        {#    // }#}
-        {# })#}
-        {#    .done(function (mag) {#}
-        {#        console.log(msg)#}
-        {#    })#}
-        $(document).ready(function () {
-            $.ajax({
-                method: "GET",
-                url: "../apiRouter/apitest.py",
-                headers: {
-                    {#"Content-Type": "application/json",#}
-                    'X-Naver-Client-Id': 'FX0D1x996cJpBNHf5huf',
-                    'X-Naver-Client-Secret': 'ZFgUa_ti5y',
-                },
-                data: {},
-            })
-                .done(function (msg) {
-                    alert("Data Saved: " + msg);
-                });
-        })
-
-    </script>
-
     {% if title %}
     <title>{{ title }}</title>
     {% endif %}
@@ -79,6 +44,7 @@
 
     {% block content %}
     {% endblock %}
+
     {% include "layout_sections/footer.html" %}
 </body>
 </html>

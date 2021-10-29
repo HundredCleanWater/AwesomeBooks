@@ -1,0 +1,14 @@
+
+<script>
+ {#let search = $('#qwe').val();#}
+$.ajax({
+    type: "GET",
+    url: "/search",
+    data: {search_give: '자바'},
+    success: function (response) {
+        console.log(response)
+        let json_search = JSON.parse(response['all_search_results'])
+        console.log(json_search)
+    }
+})
+</script>
