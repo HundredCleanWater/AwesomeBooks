@@ -1,7 +1,17 @@
 @import "reset.css";
+
+
 /* Components */
 @import "components/header.css";
 @import "components/footer.css";
+
+
+/* Screens */
+@import "screens/index.css";
+@import "screens/login.css";
+@import "screens/signup.css";
+
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;900&display=swap');
 .a11y {
     overflow:hidden;
