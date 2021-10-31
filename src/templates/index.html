@@ -1,4 +1,32 @@
 {% extends "layout.html"  %}
 {% block content %}
-<h1>Index Page</h1>
+<div id="wrap">
+    <section class="sct1">
+        <div class="bnr">
+
+            <form>
+                <input type="search" class="iinput">
+                <button style="width:100px; height:100px;"  class="submitBtn" type="button">
+{#                    <span class="a11y">검색하기</span>#}
+                    <span class="fas fa-search"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+</div><!--wrap-->
+<script>
+    let search = '자바'
+    // function gogo() {
+    $.ajax({
+        type: "GET",
+        url: "/search",
+        data: {search_give: search},
+        success: function (response) {
+            {#console.log(response)#}
+            console.log(123)
+            let json_search = JSON.parse(response['all_search_results'])
+            console.log(json_search)
+        }
+    })
+</script>
 {% endblock %}

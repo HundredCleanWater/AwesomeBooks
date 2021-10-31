@@ -1,0 +1,33 @@
+#header {
+    display:none;
+    /*display:flex;*/
+    justify-content:center;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    border-bottom:1px solid #000; /*임시*/
+}
+.nav {
+    display:flex;
+    justify-content:space-between;
+    width:1200px;
+    height:100px;
+}
+.logo a {display:block;}
+.logo a img {
+    display: block;
+    width:100%;
+}
+
+.gnb_list {
+    display:flex;
+}
+.gnb_list li + li {
+    margin-left:50px;
+}
+.gnb_list li a {
+    font-size:20px;
+    font-weight: 900;
+    line-height:100px;
+}
