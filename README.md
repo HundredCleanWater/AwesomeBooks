@@ -19,7 +19,7 @@ Back-end: Python, Flask, Jinja2, MogoDB
 
 ## 구현 기능
 ### Front-end
-- 
+- 이서현: HTML, CSS, Jquery, Flask, Python
 
 
 ### Back-end
