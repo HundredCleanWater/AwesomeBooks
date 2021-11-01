@@ -1,0 +1,18 @@
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .book-list {
+            width: 500px;
+            margin: 20px auto 0 auto;
+        }
+
+        .book-name {
+            display: inline-block;
+        }
+
+        .card {
+            margin-bottom: 15px;
+        }
+    </style>
